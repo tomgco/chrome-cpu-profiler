@@ -2,3 +2,4 @@
 node_modules
 site/public/css/*.css
 site/properties.json
+CPU-*

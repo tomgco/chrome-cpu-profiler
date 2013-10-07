@@ -4,16 +4,14 @@
   "description": "Convert the output of v8-profiler to work in google chrome",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js",
-    "pretest": "npm run-script lint; exit 0",
-    "test": "./node_modules/.bin/mocha -R spec",
-    "prepublish": "npm run-script lint && npm test"
+    "lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js"
   },
   "author": "Tom Gallacher",
   "license": "MIT",
   "dependencies": {
-    "strong-cpu-profiler": "git://github.com/c4milo/v8-profiler.git",
+    "strong-cpu-profiler": "~0.1.0",
     "jshint": "~2.1.11",
-    "jshint-full-path": "~0.1.0"
+    "jshint-full-path": "~0.1.0",
+    "lodash": "~2.2.1"
   }
 }
