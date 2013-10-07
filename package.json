@@ -1,6 +1,6 @@
 {
   "name": "chrome-cpu-profiler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert the output of v8-profiler to work in google chrome",
   "main": "index.js",
   "scripts": {
