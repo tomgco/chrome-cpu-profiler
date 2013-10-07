@@ -1,0 +1,14 @@
+{
+  "name": "chrome-cpu-profiler",
+  "version": "0.0.0",
+  "description": "Convert the output of v8-profiler to work in google chrome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Gallacher",
+  "license": "MIT",
+  "dependencies": {
+    "strong-cpu-profiler": "git://github.com/c4milo/v8-profiler.git"
+  }
+}
