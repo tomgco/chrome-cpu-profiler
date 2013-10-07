@@ -8,6 +8,7 @@ Visulise your applications performance in chrome using flame-graphs!
 
 ## Usage
 
+    var profiler = require('chrome-cpu-profiler')
     profiler.startProfiling('cpu-block')
     var data = profiler.stopProfiling('cpu-block')
     profiler.writeFile(data)
