@@ -1,5 +1,4 @@
 .DS_Store
 node_modules
-fleet-street
 site/public/css/*.css
 site/properties.json
