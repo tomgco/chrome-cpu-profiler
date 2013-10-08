@@ -3,12 +3,12 @@ var profiler = require('strong-cpu-profiler')
   , fs = require('fs')
   , timings = {}
 
-function profile(item) {
+function profile(item, date) {
   var data = _.clone(item.topRoot)
   followChild(item.topRoot, data)
   return { head: data
     , startTime: timings[item.title]
-    , endTime: Date.now() / 100
+    , endTime: date
   }
 }
 
@@ -39,13 +39,13 @@ function followChild(source, dest) {
 
 // Wrap start profiling to grab current time
 profile.startProfiling = function (name) {
-  timings[name] = Date.now() / 100
+  timings[name] = +Date.now() / 1000
   return profiler.startProfiling(name)
 }
 
 // Wrap stop profiling to format before returning
 profile.stopProfiling = function (name) {
-  var data = profile(profiler.stopProfiling(name))
+  var data = profile(profiler.stopProfiling(name), Date.now() / 1000)
   if (timings[name]) {
     delete timings[name]
   }
