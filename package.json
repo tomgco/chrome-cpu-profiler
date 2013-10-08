@@ -10,8 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "strong-cpu-profiler": "~0.1.0",
-    "jshint": "~2.1.11",
-    "jshint-full-path": "~0.1.0",
     "lodash": "~2.2.1"
+  },
+  "devDependencies": {
+    "jshint": "~2.1.11",
+    "jshint-full-path": "~0.1.0"
   }
 }
