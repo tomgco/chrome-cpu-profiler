@@ -9,8 +9,8 @@
   "author": "Tom Gallacher",
   "license": "MIT",
   "dependencies": {
-    "strong-cpu-profiler": "~0.1.0",
-    "lodash": "~2.2.1"
+    "strong-cpu-profiler": "git+ssh://git@github.com:tomgco/strong-cpu-profiler.git#release/2.0.0",
+    "lodash.clone": "~2.4.1"
   },
   "devDependencies": {
     "jshint": "~2.1.11",
