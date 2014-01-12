@@ -6,7 +6,10 @@
   "scripts": {
     "lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js"
   },
-  "author": "Tom Gallacher",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "author": "Tom Gallacher <tomgallacher23@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "strong-cpu-profiler": "git+ssh://git@github.com:tomgco/strong-cpu-profiler.git#release/2.0.0",
