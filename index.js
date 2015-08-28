@@ -76,7 +76,7 @@ profile.writeFile = function (file, data, cb) {
   if (!cb) {
     cb = function () {}
   }
-  if (file !== 'string') {
+  if (typeof file !== 'string') {
     data = file
     file = false
   }
